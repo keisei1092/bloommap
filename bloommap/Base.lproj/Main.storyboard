@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--BloomMap-->
+        <!--さくらまっぷ-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="bloommap" customModuleProvider="target" sceneMemberID="viewController">
@@ -35,7 +35,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="BloomMap" id="aTi-Y1-dUy"/>
+                    <navigationItem key="navigationItem" title="さくらまっぷ" id="aTi-Y1-dUy"/>
                     <connections>
                         <outlet property="map" destination="uoe-Gd-qGg" id="Sze-1Q-9Gf"/>
                     </connections>
