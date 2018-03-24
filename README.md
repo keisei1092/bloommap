@@ -1,4 +1,4 @@
-# bloommap
+# 🌸 bloommap
 
 An iOS application which can check Ohanami spots and those latest photos around Tokyo.
 
