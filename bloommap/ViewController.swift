@@ -64,13 +64,17 @@ class ViewController: UIViewController, MKMapViewDelegate {
 
 	func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView,
 				 calloutAccessoryControlTapped control: UIControl) {
-		// let location = view.annotation as! Spot
-		// let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeTransit]
-		// location.mapItem().openInMaps(launchOptions: launchOptions)
-
-		let vc = PhotosViewController()
-		vc.spotName = (view.annotation as! Spot).title!
-		navigationController?.pushViewController(vc, animated: true)
+        switch control.tag {
+        case SpotMarkerView.FunctionType.camera.rawValue:
+            let vc = PhotosViewController()
+            vc.spotName = (view.annotation as! Spot).title!
+            navigationController?.pushViewController(vc, animated: true)
+        case SpotMarkerView.FunctionType.map.rawValue:
+            let location = view.annotation as! Spot
+            let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeTransit]
+            location.mapItem().openInMaps(launchOptions: launchOptions)
+        default: break
+        }
 	}
 
 }

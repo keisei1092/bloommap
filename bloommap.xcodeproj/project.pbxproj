@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0263D69D25A2D88D8953D4DB /* Pods_bloommapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ADEDB354720814CA682BB49 /* Pods_bloommapTests.framework */; };
+		456429DA206C950A00457B5B /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456429D9206C950A00457B5B /* Config.swift */; };
 		EAA6AB3224FD5FC7FF508E7F /* Pods_bloommap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D75DC2C282794C42E53A8431 /* Pods_bloommap.framework */; };
-		F35A7F8320662BAE00D2787A /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35A7F8220662BAE00D2787A /* Config.swift */; };
 		F3EF48CB206602CD002381D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF48CA206602CD002381D0 /* AppDelegate.swift */; };
 		F3EF48CD206602CD002381D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF48CC206602CD002381D0 /* ViewController.swift */; };
 		F3EF48D0206602CD002381D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3EF48CE206602CD002381D0 /* Main.storyboard */; };
@@ -46,6 +46,7 @@
 /* Begin PBXFileReference section */
 		13E748FB3241F4A05CA7AC81 /* Pods-bloommap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bloommap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bloommap/Pods-bloommap.debug.xcconfig"; sourceTree = "<group>"; };
 		2A62A71B743C4AE3F6A84B7C /* Pods_bloommapUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bloommapUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		456429D9206C950A00457B5B /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		6ADEDB354720814CA682BB49 /* Pods_bloommapTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bloommapTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93886160F303D85169E04931 /* Pods-bloommapUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bloommapUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-bloommapUITests/Pods-bloommapUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BE2321E64D5FFA24729521B9 /* Pods-bloommapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bloommapTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-bloommapTests/Pods-bloommapTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -53,7 +54,6 @@
 		C5CA811E58B029CC04A206A3 /* Pods-bloommap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bloommap.release.xcconfig"; path = "Pods/Target Support Files/Pods-bloommap/Pods-bloommap.release.xcconfig"; sourceTree = "<group>"; };
 		CC08E032A36F1745886F7351 /* Pods-bloommapUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bloommapUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bloommapUITests/Pods-bloommapUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D75DC2C282794C42E53A8431 /* Pods_bloommap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bloommap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F35A7F8220662BAE00D2787A /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		F3EF48C7206602CD002381D0 /* bloommap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bloommap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3EF48CA206602CD002381D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3EF48CC206602CD002381D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -153,7 +153,7 @@
 				F3EF48FF20660DC2002381D0 /* BloomSpot.json */,
 				F3EF4903206610C6002381D0 /* SpotViews.swift */,
 				F3EF490520661697002381D0 /* PhotosViewController.swift */,
-				F35A7F8220662BAE00D2787A /* Config.swift */,
+				456429D9206C950A00457B5B /* Config.swift */,
 			);
 			path = bloommap;
 			sourceTree = "<group>";
@@ -474,8 +474,7 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterShareExtensionUIResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -494,7 +493,7 @@
 				F3EF4904206610C6002381D0 /* SpotViews.swift in Sources */,
 				F3EF48CB206602CD002381D0 /* AppDelegate.swift in Sources */,
 				F3EF490620661697002381D0 /* PhotosViewController.swift in Sources */,
-				F35A7F8320662BAE00D2787A /* Config.swift in Sources */,
+				456429DA206C950A00457B5B /* Config.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
