@@ -65,7 +65,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
 	func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView,
 				 calloutAccessoryControlTapped control: UIControl) {
         switch control.tag {
-        case SpotMarkerView.FunctionType.camera.rawValue:
+        case SpotMarkerView.FunctionType.twitter.rawValue:
             let vc = PhotosViewController()
             vc.spotName = (view.annotation as! Spot).title!
             navigationController?.pushViewController(vc, animated: true)
